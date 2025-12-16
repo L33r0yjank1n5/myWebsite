@@ -8,7 +8,7 @@ export default defineConfig({
       babel: {
         plugins: [
             ['babel-plugin-react-compiler'],
-            ['styled-components']
+            ['styled-components'],
         ],
       },
     }),
