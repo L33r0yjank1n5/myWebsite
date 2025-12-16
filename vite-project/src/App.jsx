@@ -1,10 +1,21 @@
+import styled from "styled-components"
+import { Sidebar } from "./Components/Sidebar.jsx"
+
 function App() {
-
   return (
-    <div>
+    <MainDiv>
+      <Sidebar/>
+      <MainContent>
 
-    </div>
+      </MainContent>
+    </MainDiv>
   )
 }
+
+const MainDiv = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+`
 
 export default App
