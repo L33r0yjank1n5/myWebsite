@@ -1,11 +1,16 @@
+import styled from "styled-components"
 
-export const IndeedSVG = () => {
+export const IndeedSVG = ({
+  svgHeight = '4rem',
+  svgWidth= '4rem'
+}) => {
   return (
-    <svg
+    <Svg
       xmlns="http://www.w3.org/2000/svg"
       focusable="false"
+      svgHeight={svgHeight}
+      svgWidth={svgWidth}
       role="img"
-      fill="currentColor"
       viewBox="0 0 24 24"
     >
       <path
@@ -14,6 +19,12 @@ export const IndeedSVG = () => {
         9.41a.41.41 0 01-.409.408H5.864a.41.41 0 01-.41-.409V9.954a.41.41 0 01.41-.409h2.454a.41.41 0 01.41.41v8.181zM19.364 3H4.636C3.734 3 3 3.734 3 4.636v14.728C3 20.266 3.734 21 4.636 21h14.728c.902 0 1.636-.734 1.636-1.636V4.636C21
         3.734 20.266 3 19.364 3z"
       />
-    </svg>
+    </Svg>
   )
 }
+
+const Svg = styled.svg`
+    width: '${props => props.svgWidth}';
+    height: '${props => props.svgHeight}';
+    fill: #000000;
+`
